@@ -1,7 +1,5 @@
-# Pull base image 
-From tomcat:8-jre8 
+FROM bitnami/tomcat:latest
 
-# Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+MAINTAINER HashanR
 
+COPY ./webapp.war /opt/bitnami/tomcat/webapps_default
